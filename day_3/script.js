@@ -124,3 +124,36 @@ myDetailsCopy["Pincode"] = "521157";
 
 console.log("Original", myDetails);
 console.log("Shallow Copy", myDetailsCopy);
+
+// Destructuring Assignment
+
+let cities = ["Hyderabad", "Amaravathi", "Chennai", "Vijayawada"];
+
+let [city1, city2, city3, city4] = cities;
+console.log("City1: " + city1);
+console.log("City2: " + city2);
+console.log("City3: " + city3);
+console.log("City4: " + city4);
+
+let [hyd, , che, vij] = cities;
+console.log(hyd);
+console.log(che);
+console.log(vij);
+
+let [, city5, ...twinCities] = cities;
+console.log(city5);
+console.log(twinCities);
+
+let { fName, lName, grade } = myDetails;
+console.log(fName);
+console.log(lName);
+console.log(grade);
+
+let { skills: ajaySkills, city: ajayCity } = myDetails;
+console.log(ajaySkills);
+console.log(ajayCity);
+
+let myString = "Ajay";
+let myStringCopy = [...myString];
+console.log(myString);
+console.log(myStringCopy);

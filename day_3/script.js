@@ -157,3 +157,25 @@ let myString = "Ajay";
 let myStringCopy = [...myString];
 console.log(myString);
 console.log(myStringCopy);
+
+// string interpolation
+console.log("String Interpolation");
+
+let string1 = "Ajay";
+let age2 = 25;
+let city6 = "Pamarru";
+let greetings = "Thankyou";
+
+console.log(
+  "First name is " +
+    string1 +
+    " and your age is " +
+    age2 +
+    " and you are from " +
+    city6 +
+    " " +
+    greetings,
+);
+
+let finalString = `Your first name is ${string1} and your age is ${age2} and you are from ${city6} and finally ${greetings}`;
+console.log(finalString);

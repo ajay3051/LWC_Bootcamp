@@ -103,3 +103,75 @@ console.log("----------------");
 for (let [day, { open, close }] of Object.entries(openingHours)) {
   console.log(`${day} - ${open} - ${close}`);
 }
+console.log("-----------------------");
+
+// Map Collection
+console.log("Map Collection");
+
+let myMap = new Map();
+console.log(myMap);
+myMap.set("1", "Ajay");
+myMap.set(2, "Kumar");
+myMap.set(3, 60);
+myMap.set(false, "No");
+console.log("My Map: ", myMap);
+
+// to access values from map
+console.log(myMap.get("1"));
+console.log(myMap.get(3));
+console.log(myMap.get(false));
+console.log(`Map Size: ${myMap.size}`);
+
+let favPlaces = new Map([
+  ["Jaipur", "Palace"],
+  ["Pune", "Fort"],
+]);
+console.log("Fav Places:", favPlaces);
+
+for (let curItem of myMap) {
+  console.log(curItem);
+}
+
+for (let [key, value] of myMap) {
+  console.log(`${myMap.get(key)}`);
+  console.log(`${key} - ${value}`);
+}
+
+for (let [key, value] of favPlaces) {
+  console.log(`${key} = ${value}`);
+}
+
+for (let currentKey of myMap.keys()) {
+  console.log(`Key - ${currentKey}`);
+}
+for (let currentValue of myMap.values()) {
+  console.log(`Value - ${currentValue}`);
+}
+
+// Set Collection
+console.log("Set Collection");
+
+let mySet = new Set();
+console.log(mySet);
+mySet.add("Burger");
+mySet.add("Pizza");
+mySet.add("Sandwich");
+mySet.add("Pizza");
+mySet.add("Chat");
+console.log(mySet);
+
+console.log(mySet.has("Drink"));
+mySet.delete("Burger");
+console.log(mySet);
+console.log(mySet.size);
+
+for (let currentItem of mySet) {
+  console.log(currentItem);
+}
+
+let colors = new Set(["Red", "Blue", "Green", "Blue", "Violet"]);
+console.log(colors);
+
+for (let color of colors) {
+  console.log(color);
+}
